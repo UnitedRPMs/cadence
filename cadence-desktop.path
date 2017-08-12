@@ -1,0 +1,75 @@
+--- a/data/cadence.desktop	2017-07-07 12:23:41.000000000 -0600
++++ b/data/cadence-new.desktop	2017-08-12 02:16:08.031464005 -0600
+@@ -7,60 +7,60 @@
+ Icon=cadence
+ Terminal=false
+ Type=Application
+-Categories=AudioVideo;AudioEditing;Qt;
++Categories=AudioVideo;Qt;
+ X-Ayatana-Desktop-Shortcuts=Catia;Claudia;ClaudiaLauncher;Carla;CarlaControl;JackMeterIn;JackMeterOut;JackSettings;Logs;Render;XYController;
+ 
+-[Catia Shortcut Group]
++[X- Catia Shortcut Group]
+ Name=Catia
+ Exec=catia
+ TargetEnvironment=Unity
+ 
+-[Claudia Shortcut Group]
++[X- Claudia Shortcut Group]
+ Name=Claudia
+ Exec=claudia
+ TargetEnvironment=Unity
+ 
+-[ClaudiaLauncher Shortcut Group]
++[X- ClaudiaLauncher Shortcut Group]
+ Name=Claudia Launcher
+ Exec=claudia-launcher
+ TargetEnvironment=Unity
+ 
+-[Carla Shortcut Group]
++[X- Carla Shortcut Group]
+ Name=Carla
+ Exec=carla
+ TargetEnvironment=Unity
+ 
+-[CarlaControl Shortcut Group]
++[X- CarlaControl Shortcut Group]
+ Name=Carla Control
+ Exec=carla-control
+ TargetEnvironment=Unity
+ 
+-[JackMeterIn Shortcut Group]
++[X- JackMeterIn Shortcut Group]
+ Name=JACK Meter (Inputs)
+ Exec=cadence-jackmeter -in
+ TargetEnvironment=Unity
+ 
+-[JackMeterOut Shortcut Group]
++[X- JackMeterOut Shortcut Group]
+ Name=JACK Meter (Outputs)
+ Exec=cadence-jackmeter
+ TargetEnvironment=Unity
+ 
+-[JackSettings Shortcut Group]
++[X- JackSettings Shortcut Group]
+ Name=JACK Settings
+ Exec=cadence-jacksettings
+ TargetEnvironment=Unity
+ 
+-[Logs Shortcut Group]
++[X- Logs Shortcut Group]
+ Name=Logs
+ Exec=cadence-logs
+ TargetEnvironment=Unity
+ 
+-[Render Shortcut Group]
++[X- Render Shortcut Group]
+ Name=Render
+ Exec=cadence-render
+ TargetEnvironment=Unity
+ 
+-[XYController Shortcut Group]
++[X- XYController Shortcut Group]
+ Name=XY-Controller
+ Exec=cadence-xycontroller
+ TargetEnvironment=Unity
