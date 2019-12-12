@@ -1,19 +1,22 @@
 %global debug_package %{nil}
 
-%global gitdate 20180409
-%global commit0 99b39989a010fae1acbce07af002b15e56a1d161
+%global commit0 915065c1f155006587e8f62ed0e23a991db9973c
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 
 Name:           cadence
+BuildRequires:	gcc gcc-c++
+BuildRequires:	pulseaudio-libs-devel
+BuildRequires:	pulseaudio-module-jack
 BuildRequires:  jack-audio-connection-kit-devel
-#BuildRequires:  PyQt4-devel
 BuildRequires:  python3-qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:  python3-dbus
-BuildRequires:	a2jmidid ladish python-rdflib 
-#BuildRequires:	zita-ajbridge
-BuildRequires:  qt-devel
+BuildRequires:	a2jmidid ladish 
+BuildRequires:	python3-rdflib 
+BuildRequires:	zita-ajbridge
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:  alsa-lib-devel
 BuildRequires:	desktop-file-utils
 
@@ -27,7 +30,8 @@ Recommends:	ladish
 Url:            http://kxstudio.sf.net/cadence
 License:        GPLv2
 Group:		Applications/Multimedia
-Version:        0.9.0
+Version:        0.9.1
+Epoch:		1
 Release:        1%{?gver}%{dist}
 Summary:        A JACK Audio Toolbox
 Source0: 	https://github.com/falkTX/Cadence/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
@@ -108,7 +112,10 @@ rm -rf %buildroot
 
 %changelog
 
-* Fri Aug 11 2017 David Vásquez <davidva AT tutanota DOT com> - 0.9.0-1-git99b3998
+* Tue Dec 10 2019 David Va <davidva AT tuta DOT io> - 0.9.1:1-1-git915065c
+- Updated to 0.9.1:1-1-git915065c
+
+* Mon Apr 02 2018 David Vásquez <davidva AT tutanota DOT com> - 0.9.0-1-git99b3998
 - Updated to 0.9.0-1-git99b3998
 
 * Fri Aug 11 2017 David Vásquez <davidva AT tutanota DOT com> - 0.8.1-1-git3ba7de2

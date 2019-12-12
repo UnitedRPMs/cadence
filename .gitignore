@@ -3,5 +3,6 @@ BUILDROOT/*
 RPMS/*
 SPECS/*
 SRPMS/*
-cadence*.tar.gz
+*.tar.gz
 .directory
+*.rpm
